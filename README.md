@@ -27,14 +27,21 @@ Docker install and configure:(Install and run the docker)
 2. (If needed)Update WSL2 Linux kernel update package for x64 machines: https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
 
 TF serving environmnet configure:(Open windows cmd and input following lines)
-1. docker pull tensorflow/serving
-2. (If needed) apt-get update; apt-get install git;     //directly clone the target repository into the docker 
-3. docker run -d --name serving_base tensorflow/serving //open a daemon process for the tensorflow/serving 
-4. docker cp ./model serving_base:/models/model         //copy the local model into the container we defined (cmd at "TF_Serving_Practice\training_code\model_train\")
-5. docker commit --change "ENV MODEL_NAME model" serving_base my_model_0 //docker commit submit and create a new image my_model_0, and Environment Model Name will be model
-6. docker run -t --rm -p 8501:8501 my_model_0           //run my_model_0 image
+1. docker pull tensorflow/serving    
+2. (If needed) apt-get update; apt-get install git;      
+3. docker run -d --name serving_base tensorflow/serving 
+4. docker cp ./model serving_base:/models/model         
+5. docker commit --change "ENV MODEL_NAME model" serving_base my_model_0 
+6. docker run -t --rm -p 8501:8501 my_model_0           
 7. curl http://localhost:8501/v1/models/model
-
+Explaination of the above steps:
+1. download tensorflow serving docker image 
+2. (If needed)directly clone the target repository into the docker
+3. open a daemon process for the tensorflow/serving 
+4. copy the local model into the container we defined (cmd at "TF_Serving_Practice\training_code\model_train\")
+5. docker commit submit and create a new image my_model_0, and Environment Model Name will be model
+6. run my_model_0 image
+7. (Open a new cmd terminal)check whether the model successfully deploy or not
 
 
 

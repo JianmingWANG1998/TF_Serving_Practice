@@ -35,6 +35,7 @@ TF serving environmnet configure:(Open windows cmd and input following lines)
 6. docker run -t --rm -p 8501:8501 my_model_0           
 7. curl http://localhost:8501/v1/models/model
 ![image](https://github.com/DataconTom/TF_Serving_Practice/blob/main/images/deploy_tf_serving.jpg)
+
 Explaination of the above steps:
 1. download tensorflow serving docker image 
 2. (If needed)directly clone the target repository into the docker

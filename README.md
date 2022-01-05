@@ -34,6 +34,7 @@ TF serving environmnet configure:(Open windows cmd and input following lines)
 5. docker commit --change "ENV MODEL_NAME model" serving_base my_model_0 
 6. docker run -t --rm -p 8501:8501 my_model_0           
 7. curl http://localhost:8501/v1/models/model
+![image](https://github.com/DataconTom/TF_Serving_Practice/blob/main/images/deploy_tf_serving.jpg)
 Explaination of the above steps:
 1. download tensorflow serving docker image 
 2. (If needed)directly clone the target repository into the docker
@@ -42,7 +43,7 @@ Explaination of the above steps:
 5. docker commit submit and create a new image my_model_0, and Environment Model Name will be model
 6. run my_model_0 image
 7. (Open a new cmd terminal)check whether the model successfully deploy or not
-
+![image](https://github.com/DataconTom/TF_Serving_Practice/blob/main/images/check_tf_serving.jpg)
 
 
 

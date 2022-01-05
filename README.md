@@ -25,6 +25,7 @@ In the code, there are three main parts. The first part is the data loading and 
 Docker install and configure:(Install and run the docker)
 1. Install docker desktop on Windows 10: https://docs.docker.com/desktop/windows/install/
 2. (If needed)Update WSL2 Linux kernel update package for x64 machines: https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
+
 TF serving environmnet configure:(Open windows cmd and input following lines)
 1. docker pull tensorflow/serving
 2. (If needed) apt-get update; apt-get install git;     //directly clone the target repository into the docker 

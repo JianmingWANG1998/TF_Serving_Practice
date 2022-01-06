@@ -66,6 +66,7 @@ Programming environment configure:
 Due to the reason that the building and saving a serving model has been introduced, we will directly go the second part in this section.
 
 ### Installing docker in Ubuntu 18.04 and configuring TF serving environment : 
+![image](https://github.com/DataconTom/TF_Serving_Practice/blob/main/images/server_adding_port.jpg)
 
 
 ## Reference

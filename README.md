@@ -59,6 +59,13 @@ Programming environment configure:
 4. finding the request_code folder to open and execute the Request_TF_Serving.ipynb 
 ![image](https://github.com/DataconTom/TF_Serving_Practice/blob/main/images/make_a_request_to_TF_serving.jpg)
 
+## Ubuntu 18.04 with Alibaba cloud
+### Cloud configuration:
+1. purchase a server and choose Ubuntu 18.04 as its operating system
+2. add the port 8501 we will use into the security group of this server
+Due to the reason that the building and saving a serving model has been introduced, we will directly go the second part in this section.
+
+### Installing docker in Ubuntu 18.04 and configuring TF serving environment : 
 
 
 ## Reference

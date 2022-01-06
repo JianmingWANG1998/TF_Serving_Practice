@@ -34,6 +34,7 @@ TF serving environmnet configure:(Open windows cmd and input following lines)
 5. docker commit --change "ENV MODEL_NAME model" serving_base my_model_0 
 6. docker run -t --rm -p 8501:8501 my_model_0           
 7. curl http://localhost:8501/v1/models/model
+
 ![image](https://github.com/DataconTom/TF_Serving_Practice/blob/main/images/deploy_tf_serving.jpg)
 
 Explaination of the above steps:
@@ -44,8 +45,16 @@ Explaination of the above steps:
 5. docker commit submit and create a new image my_model_0, and Environment Model Name will be model
 6. run my_model_0 image
 7. (Open a new cmd terminal)check whether the model successfully deploy or not
+
 ![image](https://github.com/DataconTom/TF_Serving_Practice/blob/main/images/check_tf_serving.jpg)
 
+### Making a client request to the TF serving model:
+Anaconda and Jupyter-notebook Install: https://repo.anaconda.com/archive/Anaconda3-2021.11-Windows-x86_64.exe
+Programming environment configure: 
+1. typing "anaconda prompt" into the windows 10 search line at the left-bottom desktop 
+2. typing "pip install tensorflow" into the anaconda prompt terminal   
+3. typing "jupyter-notebook" to open the jupyter-notebook in your brower
+4. finding the request_code folder to open and execute the Request_TF_Serving.ipynb
 
 
 

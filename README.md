@@ -56,8 +56,7 @@ Programming environment configure:
 1. typing "anaconda prompt" into the windows 10 search line at the left-bottom desktop 
 2. typing "pip install tensorflow" into the anaconda prompt terminal   
 3. typing "jupyter-notebook" to open the jupyter-notebook in your brower
-4. finding the request_code folder to open and execute the Request_TF_Serving.ipynb
-
+4. finding the request_code folder to open and execute the Request_TF_Serving.ipynb  
 ![image](https://github.com/DataconTom/TF_Serving_Practice/blob/main/images/make_a_request_to_TF_serving.jpg)
 
 

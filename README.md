@@ -51,6 +51,7 @@ Explaination of the above steps:
 ### Making a client request to the TF serving model:
 Anaconda and Jupyter-notebook Install:  
 https://repo.anaconda.com/archive/Anaconda3-2021.11-Windows-x86_64.exe  
+
 Programming environment configure: 
 1. typing "anaconda prompt" into the windows 10 search line at the left-bottom desktop 
 2. typing "pip install tensorflow" into the anaconda prompt terminal   

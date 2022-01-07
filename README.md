@@ -67,6 +67,17 @@ Due to the reason that the building and saving a serving model has been introduc
 ![image](https://github.com/DataconTom/TF_Serving_Practice/blob/main/images/server_adding_port.jpg)
 
 ### Installing docker in Ubuntu 18.04 and configuring TF serving environment : 
+How to Install Docker On Ubuntu 18.04(Follow Option1)：https://phoenixnap.com/kb/how-to-install-docker-on-ubuntu-18-04
+After the installation, we will follow the same steps which is shown on the above "TF serving environmnet configure".  
+1. docker pull tensorflow/serving    
+2. (If needed) apt-get update; apt-get install git;      
+3. docker run -d --name serving_base tensorflow/serving 
+4. docker cp ./model serving_base:/models/model         
+5. docker commit --change "ENV MODEL_NAME model" serving_base my_model_0 
+6. docker run -t --rm -p 8501:8501 my_model_0           
+7. curl http://localhost:8501/v1/models/model  
+### Making a client request to the TF serving model in the cloud from local computer
+In this part, we will try use the local computer (Windows 10) to access the service, functions of the serving model, provided by the port 8501 from the cloud.
 
 
 
@@ -74,5 +85,6 @@ Due to the reason that the building and saving a serving model has been introduc
 1. TensorFlow Serving with Docker: https://www.tensorflow.org/tfx/serving/docker#serving_with_docker_using_your_gpu
 2. Train and serve a TensorFlow model with TensorFlow Serving:https://tensorflow.google.cn/tfx/tutorials/serving/rest_simple?hl=zh-CN
 3. Tensorflow Serving with Docker:https://zhuanlan.zhihu.com/p/64413178
+
 
 
